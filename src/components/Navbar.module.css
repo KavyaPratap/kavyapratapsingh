@@ -1,0 +1,148 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(248, 247, 245, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+
+.logoBracket {
+  color: var(--accent);
+  font-weight: 300;
+}
+
+/* Nav links */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.navLink {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: var(--r-full);
+  transition: all 0.2s;
+}
+
+.navLink:hover,
+.navLinkActive {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* Resume button */
+.resumeBtn {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  padding: 9px 18px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+  border-radius: var(--r-sm);
+  transition: color 0.2s, background 0.2s;
+}
+
+.hamburger:hover {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* Mobile menu */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 16px 24px 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.mobileMenuOpen {
+  max-height: 600px;
+  padding: 16px 24px 24px;
+}
+
+.mobileLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 11px 14px;
+  border-radius: var(--r-md);
+  transition: all 0.2s;
+}
+
+.mobileLink:hover {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.mobileResume {
+  margin-top: 12px;
+  justify-content: center;
+  font-size: 0.88rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .nav,
+  .resumeBtn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+  }
+}

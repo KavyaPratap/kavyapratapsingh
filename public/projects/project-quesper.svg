@@ -1,0 +1,118 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="8" fill="#090D16" />
+  
+  <!-- Header Bar -->
+  <rect width="800" height="52" fill="#111726" />
+  <circle cx="28" cy="26" r="12" fill="#5B4EE8" />
+  <text x="21" y="31" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Q</text>
+  <text x="48" y="31" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Quesper AI</text>
+  
+  <!-- GCloud / Vertex AI pill in header -->
+  <rect x="145" y="14" width="220" height="24" rx="12" fill="rgba(66, 133, 244, 0.15)" stroke="rgba(66, 133, 244, 0.4)" />
+  <circle cx="158" cy="26" r="4" fill="#34A853" />
+  <text x="168" y="30" fill="#8AB4F8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Vertex AI · Gemini 3.7 Flash ADC</text>
+  
+  <!-- Live Domain Badge -->
+  <rect x="670" y="13" width="108" height="26" rx="6" fill="#5B4EE8" />
+  <text x="686" y="30" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="600">quesper.in ↗</text>
+  
+  <!-- Left Side: Multimodal Book Extractor & Vision Pipeline -->
+  <g transform="translate(20, 65)">
+    <rect width="250" height="415" rx="10" fill="#111827" stroke="#1F2937" />
+    
+    <text x="16" y="26" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">NCERT BOOK VISION EXTRACTOR</text>
+    <rect x="16" y="38" width="218" height="50" rx="6" fill="#1F2937" />
+    <text x="28" y="58" fill="#F3F4F6" font-family="system-ui, sans-serif" font-size="12" font-weight="600">NCERT_Maths_Class12.pdf</text>
+    <text x="28" y="74" fill="#34A853" font-family="system-ui, sans-serif" font-size="10">✓ 300 DPI Vision Render · No-Solution Rule</text>
+    
+    <!-- Extraction Pipeline Steps -->
+    <text x="16" y="112" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">AI AGENT PIPELINE</text>
+    
+    <g transform="translate(16, 124)">
+      <rect width="218" height="34" rx="6" fill="#1E293B" />
+      <circle cx="16" cy="17" r="4" fill="#34A853" />
+      <text x="28" y="21" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11">Page Vision Parser (Gemini 3.7)</text>
+    </g>
+    
+    <g transform="translate(16, 166)">
+      <rect width="218" height="34" rx="6" fill="#1E293B" />
+      <circle cx="16" cy="17" r="4" fill="#34A853" />
+      <text x="28" y="21" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11">Diagram Crop &amp; 4.5% Pad Engine</text>
+    </g>
+    
+    <g transform="translate(16, 208)">
+      <rect width="218" height="34" rx="6" fill="#1E293B" />
+      <circle cx="16" cy="17" r="4" fill="#38BDF8" />
+      <text x="28" y="21" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11">LaTeX Corrector &amp; Syntax Repair</text>
+    </g>
+    
+    <!-- Stats card -->
+    <g transform="translate(16, 256)">
+      <rect width="218" height="142" rx="8" fill="#0B132B" stroke="#1C2541" />
+      <text x="14" y="22" fill="#64748B" font-family="system-ui, sans-serif" font-size="10" font-weight="700">EXTRACTION &amp; GEN STATS</text>
+      
+      <text x="14" y="48" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Exemplar Extraction</text>
+      <text x="156" y="48" fill="#34A853" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Sub-2s</text>
+      
+      <text x="14" y="74" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Question Formats</text>
+      <text x="145" y="74" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Case, MCQ, AR</text>
+      
+      <text x="14" y="100" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">LaTeX Backslash Repair</text>
+      <text x="165" y="100" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="12" font-weight="700">100%</text>
+
+      <text x="14" y="126" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Teacher Time Saved</text>
+      <text x="150" y="126" fill="#F59E0B" font-family="system-ui, sans-serif" font-size="12" font-weight="700">2h → 3m</text>
+    </g>
+  </g>
+  
+  <!-- Right Side: CBSE / NCERT AI Question Synthesizer View -->
+  <g transform="translate(285, 65)">
+    <rect width="495" height="415" rx="10" fill="#111827" stroke="#1F2937" />
+    
+    <text x="20" y="26" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="700">CBSE AI Question Generator Engine</text>
+    <text x="20" y="42" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="11">Synthesized: Case-Based · MCQs · Assertion-Reason</text>
+    
+    <!-- Question Card 1: Assertion-Reason -->
+    <g transform="translate(20, 56)">
+      <rect width="455" height="110" rx="8" fill="#161F30" stroke="#25334D" />
+      <rect x="14" y="10" width="130" height="20" rx="4" fill="#4C1D95" />
+      <text x="22" y="24" fill="#C4B5FD" font-family="system-ui, sans-serif" font-size="10" font-weight="700">ASSERTION-REASON</text>
+      
+      <text x="152" y="24" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Class 12 Maths · Integrals</text>
+      
+      <text x="14" y="46" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11" font-weight="500">Assertion (A): ∫ (sin x / x) dx from 0 to ∞ converges to π/2.</text>
+      <text x="14" y="64" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="11" font-weight="500">Reason (R): The Dirichlet integral is evaluated using Feynman's integration trick.</text>
+      
+      <rect x="14" y="78" width="427" height="22" rx="4" fill="#065F46" />
+      <text x="24" y="93" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="10" font-weight="700">✓ Option (a): Both (A) and (R) are true and (R) is the correct explanation of (A).</text>
+    </g>
+    
+    <!-- Question Card 2: Case Study Question -->
+    <g transform="translate(20, 178)">
+      <rect width="455" height="135" rx="8" fill="#161F30" stroke="#25334D" />
+      <rect x="14" y="10" width="155" height="20" rx="4" fill="#1E3A8A" />
+      <text x="22" y="24" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="10" font-weight="700">CASE STUDY (4 MARKS)</text>
+      
+      <text x="178" y="24" fill="#A78BFA" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Application of Derivatives</text>
+      
+      <text x="14" y="46" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11">An architect is designing a cylindrical fuel storage tank of volume V = 1000 m³...</text>
+      
+      <g transform="translate(14, 58)">
+        <rect width="427" height="42" rx="4" fill="#0B132B" stroke="#1E293B" />
+        <text x="12" y="18" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="10">(i) Express surface area S in terms of radius r: S(r) = 2πr² + 2000/r [1 Mark]</text>
+        <text x="12" y="34" fill="#34D399" font-family="system-ui, sans-serif" font-size="10">✓ (ii) Find critical radius for minimal cost: r = (500/π)^(1/3) [2 Marks]</text>
+      </g>
+      
+      <text x="14" y="122" fill="#818CF8" font-family="system-ui, sans-serif" font-size="10">Generated with NCERT Blueprint &amp; Diagram Crop Segmentation</text>
+    </g>
+    
+    <!-- Bottom Action Row inside Stage -->
+    <g transform="translate(20, 326)">
+      <rect width="455" height="42" rx="6" fill="#1E293B" />
+      <circle cx="24" cy="21" r="5" fill="#34A853" />
+      <text x="36" y="25" fill="#F1F5F9" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Quesper Live: Tap-to-add exam builder · Word (.docx) &amp; Print PDF</text>
+      <rect x="365" y="9" width="76" height="24" rx="4" fill="#5B4EE8" />
+      <text x="375" y="25" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Open App</text>
+    </g>
+  </g>
+</svg>

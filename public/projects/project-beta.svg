@@ -1,0 +1,99 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="8" fill="#0B0F19" />
+  
+  <!-- Left Side: App Specs & Architecture Highlights -->
+  <g transform="translate(40, 50)">
+    <rect width="280" height="400" rx="12" fill="#111827" stroke="#1F2937" />
+    <text x="24" y="40" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="12" font-weight="700">ANDROID / KOTLIN APP</text>
+    <text x="24" y="70" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">HabitPulse v2.4</text>
+    
+    <text x="24" y="110" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">ARCHITECTURE</text>
+    
+    <g transform="translate(24, 130)">
+      <rect width="232" height="40" rx="6" fill="#1E293B" />
+      <text x="14" y="25" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">MVVM + Jetpack Compose</text>
+    </g>
+    
+    <g transform="translate(24, 180)">
+      <rect width="232" height="40" rx="6" fill="#1E293B" />
+      <text x="14" y="25" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">Room Database (Offline-First)</text>
+    </g>
+
+    <g transform="translate(24, 230)">
+      <rect width="232" height="40" rx="6" fill="#1E293B" />
+      <text x="14" y="25" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="12">Firebase Auth &amp; Realtime Sync</text>
+    </g>
+    
+    <!-- Metrics -->
+    <g transform="translate(24, 290)">
+      <rect width="110" height="70" rx="8" fill="#1E1B4B" stroke="#4338CA" />
+      <text x="14" y="28" fill="#A5B4FC" font-family="system-ui, sans-serif" font-size="11">Current Streak</text>
+      <text x="14" y="54" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">🔥 28 Days</text>
+    </g>
+    <g transform="translate(146, 290)">
+      <rect width="110" height="70" rx="8" fill="#064E3B" stroke="#047857" />
+      <text x="14" y="28" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="11">Completion</text>
+      <text x="14" y="54" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">94.2%</text>
+    </g>
+  </g>
+  
+  <!-- Right Side: Phone Mockup Frame -->
+  <g transform="translate(420, 25)">
+    <!-- Phone Bezel -->
+    <rect width="280" height="450" rx="36" fill="#000000" stroke="#374151" stroke-width="4" />
+    <!-- Dynamic Island / Speaker -->
+    <rect x="95" y="12" width="90" height="18" rx="9" fill="#1F2937" />
+    <circle cx="165" cy="21" r="3" fill="#10B981" />
+    
+    <!-- Phone Screen Content -->
+    <g transform="translate(12, 38)">
+      <rect width="256" height="400" rx="24" fill="#111827" />
+      
+      <!-- App Header -->
+      <text x="20" y="32" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="11">SUNDAY, NOV 1</text>
+      <text x="20" y="56" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Today's Habits</text>
+      
+      <!-- Progress Ring Indicator -->
+      <g transform="translate(20, 75)">
+        <rect width="216" height="74" rx="12" fill="linear-gradient(135deg, #1E1B4B, #312E81)" />
+        <circle cx="45" cy="37" r="24" stroke="#4338CA" stroke-width="5" fill="none" />
+        <circle cx="45" cy="37" r="24" stroke="#38BDF8" stroke-width="5" stroke-dasharray="120" stroke-dashoffset="30" fill="none" />
+        <text x="36" y="41" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">75%</text>
+        <text x="85" y="30" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="600">3 of 4 completed</text>
+        <text x="85" y="48" fill="#A5B4FC" font-family="system-ui, sans-serif" font-size="11">Keep crushing it!</text>
+      </g>
+      
+      <!-- Habit Items -->
+      <g transform="translate(20, 165)">
+        <!-- Habit 1 -->
+        <rect width="216" height="46" rx="8" fill="#1F2937" />
+        <circle cx="22" cy="23" r="10" fill="#10B981" />
+        <path d="M 18 23 L 21 26 L 26 19" stroke="#FFFFFF" stroke-width="2" fill="none" />
+        <text x="42" y="27" fill="#F3F4F6" font-family="system-ui, sans-serif" font-size="12" font-weight="500">DSA Practice (2 LeetCode)</text>
+      </g>
+      
+      <g transform="translate(20, 220)">
+        <!-- Habit 2 -->
+        <rect width="216" height="46" rx="8" fill="#1F2937" />
+        <circle cx="22" cy="23" r="10" fill="#10B981" />
+        <path d="M 18 23 L 21 26 L 26 19" stroke="#FFFFFF" stroke-width="2" fill="none" />
+        <text x="42" y="27" fill="#F3F4F6" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Kotlin Jetpack Compose</text>
+      </g>
+      
+      <g transform="translate(20, 275)">
+        <!-- Habit 3 -->
+        <rect width="216" height="46" rx="8" fill="#1F2937" />
+        <circle cx="22" cy="23" r="10" fill="#10B981" />
+        <path d="M 18 23 L 21 26 L 26 19" stroke="#FFFFFF" stroke-width="2" fill="none" />
+        <text x="42" y="27" fill="#F3F4F6" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Read System Design Docs</text>
+      </g>
+      
+      <g transform="translate(20, 330)">
+        <!-- Habit 4 (Pending) -->
+        <rect width="216" height="46" rx="8" fill="#1F2937" stroke="#374151" />
+        <circle cx="22" cy="23" r="10" fill="none" stroke="#6B7280" stroke-width="2" />
+        <text x="42" y="27" fill="#9CA3AF" font-family="system-ui, sans-serif" font-size="12" font-weight="500">Workout &amp; Hydration</text>
+      </g>
+    </g>
+  </g>
+</svg>

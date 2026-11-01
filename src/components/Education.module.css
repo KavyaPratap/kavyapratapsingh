@@ -1,0 +1,162 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* ── Dot & line ── */
+.lineWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.dotActive {
+  background: var(--accent-grad);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: var(--shadow-accent);
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: var(--border);
+  margin: 8px 0;
+}
+
+/* ── Card ── */
+.card {
+  margin-bottom: 24px;
+}
+
+.cardActive {
+  border-color: rgba(91,78,232,0.3);
+  background: linear-gradient(135deg, #FEFCFF 0%, var(--surface) 100%);
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.currentBadge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+  margin-bottom: 8px;
+}
+
+.degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.institute {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.period {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.grade {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.semester {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Highlights */
+.highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.highlight {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.highlight::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cardHead {
+    flex-direction: column;
+  }
+
+  .meta {
+    align-items: flex-start;
+  }
+}

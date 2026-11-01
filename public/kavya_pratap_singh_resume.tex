@@ -1,0 +1,183 @@
+%-------------------------
+% Kavya Pratap Singh - Tailored Software Engineering Resume
+% Overleaf / LaTeX Compatible (pdflatex)
+% Based on standard Jake's Resume format (ATS-friendly, single page)
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Kavya Pratap Singh} \\ \vspace{2pt}
+    \small Noida, Uttar Pradesh, India \ $|$ \ 
+    \href{mailto:kavyapratapsingh221@gmail.com}{\underline{kavyapratapsingh221@gmail.com}} \ $|$ \ 
+    \href{https://linkedin.com/in/your-profile}{\underline{LinkedIn}} \ $|$ \ 
+    \href{https://github.com/KavyaPratap}{\underline{github.com/KavyaPratap}} \ $|$ \ 
+    \href{https://quesper.in}{\underline{Portfolio: quesper.in}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Noida Institute of Engineering \& Technology (NIET)}{Greater Noida, India}
+      {Bachelor of Technology in Computer Science \& Engineering \textbf{(Current CGPA: 8.67 / 10)}}{2024 -- 2028 (Ongoing)}
+      \resumeItemListStart
+        \resumeItem{Core Subjects: Data Structures \& Algorithms, DBMS, Operating Systems, Computer Networks.}
+        \resumeItem{Leadership: \textbf{Vice President -- Design Thinking Club} (Organizing student tech bootcamps \& hackathons).}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Senior Secondary School (CBSE)}{India}
+      {Class XII -- Science (Physics, Chemistry, Mathematics, Computer Science) \textbf{(Score: 85\%)}}{2023 -- 2024}
+    \resumeSubheading
+      {Secondary School (CBSE)}{India}
+      {Class X -- High School \textbf{(Score: 95\%)}}{2021 -- 2022}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Kotlin, JavaScript, TypeScript, Dart, Java, SQL, C/C++, HTML/CSS, LaTeX} \\
+     \textbf{AI \& Machine Learning}{: Vertex AI (Google Cloud), Gemini Multimodal Vision API, Local LLMs (CodeLlama, Qwen-Coder via Ollama/GGUF), Deep Learning (CNN \& ANN), Prompt Engineering, OCR} \\
+     \textbf{Mobile \& Web Development}{: Android SDK, Jetpack Compose, Room Database (Offline-First), Firebase (Firestore, Auth), Next.js, React.js, Node.js, RESTful APIs, Jinja2, Tailwind CSS} \\
+     \textbf{Developer Tools \& Cloud}{: Google Cloud Platform (ADC), Google Play Console (Verified Developer Account), Git, GitHub, Linux/Bash, Docker, Vercel} \\
+     \textbf{Spoken Languages}{: English (Professional Working), Hindi (Native/Bilingual), German (Elementary / Currently Learning)}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Featured Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Quesper -- AI Exam Paper \& Question Bank App} $|$ \emph{Android, Kotlin, Jetpack Compose, Room, Firebase}}{Nov 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Privately engineered and launched a native Android platform enabling school teachers to assemble print-ready CBSE/NCERT exam papers in under \textbf{3 minutes} (saving 2+ hours per test) by tapping questions directly from authentic pages.}
+            \resumeItem{Architected an \textbf{offline-first local cache} with Room Database paired with automated cloud sync via Firebase Firestore.}
+            \resumeItem{Built an automated blueprint calculation engine supporting custom section limits, Bloom's taxonomy marks weighting, and instant export to print-ready PDF and editable Word (.docx) formats.}
+            \resumeItem{Published and actively maintained on Google Play via verified \textbf{Google Developer Account}; Live: \href{https://quesper.in}{\underline{quesper.in}}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Quesper AI -- Universal Book Extractor \& Question Synthesizer} $|$ \emph{Vertex AI, Python, Gemini Vision, LaTeX}}{July 2026}
+          \resumeItemListStart
+            \resumeItem{Privately developed an autonomous multimodal AI pipeline using \textbf{Vertex AI (Gemini 3.7 \& 3.5 Flash via gcloud ADC)} that extracted \textbf{20,000+ authentic questions} directly from 300 DPI textbook pages with zero-solution filtering.}
+            \resumeItem{Synthesized CBSE/NCERT curriculum-aligned \textbf{Case-Based Questions, MCQs, and Assertion-Reason Questions} with step-by-step verified solutions.}
+            \resumeItem{Implemented an automated bounding-box diagram segmentation engine (4.5\% padding) and a battle-tested mathematical \textbf{\LaTeX\ formula corrector} repairing syntax corruptions and backslashes.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Tkinter App Designer -- Visual GUI Studio \& Local AI Synthesizer} $|$ \emph{Python, Tkinter, Local LLMs, Jinja2, Flutter}}{2024}
+          \resumeItemListStart
+            \resumeItem{Privately built a desktop GUI designer in 2024 with an interactive drag-and-drop canvas, snap-to-grid alignment, marquee multi-widget selection, undo/redo history stack, and an instant \textbf{F5 Live Preview} runner.}
+            \resumeItem{Integrated an \textbf{offline Local LLM code synthesizer} (CodeLlama / Qwen-Coder) for private, zero-latency callback function generation and automated API deprecation repairs.}
+            \resumeItem{Built an extensible multi-target compiler utilizing Jinja2 templates, outputting clean, production-grade code for \textbf{Python Tkinter/CustomTkinter, Flutter (Dart)}, and \textbf{Java (Swing)}.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Proprietary Software Systems \& EdTech Platforms}{Noida / Remote}
+      {Full-Stack \& AI Systems Developer (Privately Built Applications)}{2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Privately developed proprietary desktop developer tooling, multimodal AI vision pipelines, and native Android software.}
+        \resumeItem{Built Quesper AI (July 2026) using Google Cloud Vertex AI, extracting \textbf{20,000+ curriculum questions} with high-precision bounding box cropping and \LaTeX\ mathematical formula repairs.}
+        \resumeItem{Developed Quesper Android (Nov 2025 -- Present) with Room DB offline-first architecture and Firebase cloud synchronization, published under verified Google Play Developer account.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS & LEADERSHIP-----------
+\section{Achievements \& Leadership}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Vice President -- Design Thinking Club (NIET)}{: Leading innovation workshops, creative design bootcamps, and hackathons.} \\
+     \textbf{2nd Position -- Calculus of Innovation Hackathon}{: Awarded 2nd position for architecting and pitching a cutting-edge AI EdTech solution.} \\
+     \textbf{NPTEL Certifications}{: Completed rigorous academic technical certifications with elite scores through IIT / Ministry of Education.} \\
+     \textbf{Google Developer Account}{: Verified Google Play Console developer account publishing and maintaining production Android software.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

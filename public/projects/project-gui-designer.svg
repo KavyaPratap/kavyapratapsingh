@@ -1,0 +1,192 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="8" fill="#0D1117" />
+
+  <!-- Top Window Header Bar -->
+  <rect width="800" height="46" fill="#161B22" />
+  <circle cx="24" cy="23" r="6" fill="#FF5F56" />
+  <circle cx="42" cy="23" r="6" fill="#FFBD2E" />
+  <circle cx="60" cy="23" r="6" fill="#27C93F" />
+
+  <text x="86" y="27" fill="#F0F6FC" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Tkinter App Designer</text>
+  <text x="216" y="27" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Visual GUI Builder</text>
+
+  <!-- Local AI Model Badge -->
+  <rect x="340" y="11" width="260" height="24" rx="12" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.35)" />
+  <circle cx="352" cy="23" r="4" fill="#10B981" />
+  <text x="362" y="27" fill="#34D399" font-family="system-ui, sans-serif" font-size="10" font-weight="700">⚡ Local LLM Code Synthesizer (Offline)</text>
+
+  <!-- F5 Live Preview Button -->
+  <rect x="680" y="11" width="102" height="24" rx="6" fill="#5B4EE8" />
+  <text x="696" y="27" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700">▶ Live Preview (F5)</text>
+
+  <!-- Left Sidebar: Widget Palette -->
+  <g transform="translate(14, 58)">
+    <rect width="160" height="428" rx="8" fill="#161B22" stroke="#21262D" />
+    <text x="14" y="22" fill="#8B949E" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">WIDGET PALETTE</text>
+
+    <!-- Draggable Widgets -->
+    <g transform="translate(12, 34)">
+      <rect width="136" height="30" rx="5" fill="#0D1117" stroke="#30363D" />
+      <text x="10" y="19" fill="#58A6FF" font-family="system-ui, sans-serif" font-size="11">⊞ Button</text>
+    </g>
+    <g transform="translate(12, 72)">
+      <rect width="136" height="30" rx="5" fill="#0D1117" stroke="#30363D" />
+      <text x="10" y="19" fill="#7EE787" font-family="system-ui, sans-serif" font-size="11">T Text Entry</text>
+    </g>
+    <g transform="translate(12, 110)">
+      <rect width="136" height="30" rx="5" fill="#0D1117" stroke="#30363D" />
+      <text x="10" y="19" fill="#FFA657" font-family="system-ui, sans-serif" font-size="11">🏷 Label Widget</text>
+    </g>
+    <g transform="translate(12, 148)">
+      <rect width="136" height="30" rx="5" fill="#0D1117" stroke="#30363D" />
+      <text x="10" y="19" fill="#D2A8FF" font-family="system-ui, sans-serif" font-size="11">☑ Checkbox</text>
+    </g>
+    <g transform="translate(12, 186)">
+      <rect width="136" height="30" rx="5" fill="#0D1117" stroke="#30363D" />
+      <text x="10" y="19" fill="#79C0FF" font-family="system-ui, sans-serif" font-size="11">▼ Dropdown Menu</text>
+    </g>
+    <g transform="translate(12, 224)">
+      <rect width="136" height="30" rx="5" fill="#0D1117" stroke="#30363D" />
+      <text x="10" y="19" fill="#FF7B72" font-family="system-ui, sans-serif" font-size="11">⎚ Canvas Panel</text>
+    </g>
+
+    <!-- Export Target Frameworks -->
+    <text x="14" y="280" fill="#8B949E" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">CODE TARGETS</text>
+    <g transform="translate(12, 292)">
+      <rect width="136" height="26" rx="4" fill="#1F2937" />
+      <text x="10" y="17" fill="#F3F4F6" font-family="system-ui, sans-serif" font-size="10" font-weight="600">🐍 Python (Tkinter)</text>
+    </g>
+    <g transform="translate(12, 324)">
+      <rect width="136" height="26" rx="4" fill="#1F2937" />
+      <text x="10" y="17" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="10" font-weight="600">🎯 Flutter (Dart)</text>
+    </g>
+    <g transform="translate(12, 356)">
+      <rect width="136" height="26" rx="4" fill="#1F2937" />
+      <text x="10" y="17" fill="#F59E0B" font-family="system-ui, sans-serif" font-size="10" font-weight="600">☕ Java (Swing)</text>
+    </g>
+    <g transform="translate(12, 388)">
+      <rect width="136" height="26" rx="4" fill="rgba(91,78,232,0.15)" stroke="rgba(91,78,232,0.4)" />
+      <text x="10" y="17" fill="#A5B4FC" font-family="system-ui, sans-serif" font-size="10" font-weight="600">⚡ Local Code Synthesis</text>
+    </g>
+  </g>
+
+  <!-- Center: Drag and Drop Canvas View -->
+  <g transform="translate(186, 58)">
+    <rect width="320" height="428" rx="8" fill="#161B22" stroke="#21262D" />
+    <text x="14" y="22" fill="#8B949E" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="0.05em">VISUAL CANVAS (SNAP-TO-GRID)</text>
+
+    <!-- Canvas Inner Area -->
+    <rect x="14" y="34" width="292" height="380" rx="6" fill="#0D1117" stroke="#30363D" />
+
+    <!-- Grid dots pattern representation -->
+    <circle cx="34" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="64" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="94" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="124" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="154" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="184" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="214" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="244" cy="54" r="1.5" fill="#30363D" />
+    <circle cx="274" cy="54" r="1.5" fill="#30363D" />
+
+    <!-- Dropped Mock UI Widgets -->
+    <g transform="translate(30, 60)">
+      <text x="4" y="14" fill="#F0F6FC" font-family="system-ui, sans-serif" font-size="12" font-weight="700">User Authentication</text>
+    </g>
+
+    <!-- Entry widget 1 -->
+    <g transform="translate(30, 88)">
+      <text x="2" y="12" fill="#8B949E" font-family="system-ui, sans-serif" font-size="10">Username / Email</text>
+      <rect x="0" y="18" width="260" height="32" rx="4" fill="#161B22" stroke="#30363D" />
+      <text x="10" y="38" fill="#6E7681" font-family="system-ui, sans-serif" font-size="11">kavya@niet.co.in</text>
+    </g>
+
+    <!-- Entry widget 2 -->
+    <g transform="translate(30, 150)">
+      <text x="2" y="12" fill="#8B949E" font-family="system-ui, sans-serif" font-size="10">Secret Password</text>
+      <rect x="0" y="18" width="260" height="32" rx="4" fill="#161B22" stroke="#30363D" />
+      <text x="10" y="38" fill="#6E7681" font-family="system-ui, sans-serif" font-size="11">••••••••••••</text>
+    </g>
+
+    <!-- Selected Button Widget with Bounding Box & Handles -->
+    <g transform="translate(30, 220)">
+      <rect x="-3" y="-3" width="266" height="42" rx="6" fill="none" stroke="#5B4EE8" stroke-dasharray="3 3" stroke-width="1.5" />
+      <circle cx="-3" cy="-3" r="3" fill="#5B4EE8" />
+      <circle cx="263" cy="-3" r="3" fill="#5B4EE8" />
+      <circle cx="-3" cy="39" r="3" fill="#5B4EE8" />
+      <circle cx="263" cy="39" r="3" fill="#5B4EE8" />
+
+      <rect x="0" y="0" width="260" height="36" rx="4" fill="#5B4EE8" />
+      <text x="96" y="22" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">Login to System</text>
+    </g>
+
+    <!-- Floating Property Badge -->
+    <g transform="translate(30, 280)">
+      <rect width="260" height="58" rx="6" fill="#1C2128" stroke="#30363D" />
+      <text x="12" y="18" fill="#A5B4FC" font-family="system-ui, sans-serif" font-size="10" font-weight="700">WIDGET: btn_login (ttk.Button)</text>
+      <text x="12" y="34" fill="#8B949E" font-family="system-ui, sans-serif" font-size="10">Event: &lt;Button-1&gt; → handle_login()</text>
+      <text x="12" y="48" fill="#34D399" font-family="system-ui, sans-serif" font-size="9">✓ Local AI Function Synthesized</text>
+    </g>
+
+    <g transform="translate(30, 350)">
+      <rect width="260" height="48" rx="6" fill="#065F46" opacity="0.3" />
+      <text x="12" y="20" fill="#34D399" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Undo/Redo Stack: Active</text>
+      <text x="12" y="36" fill="#6EE7B7" font-family="system-ui, sans-serif" font-size="10">History depth: 42 steps · Ctrl+Z / Ctrl+Y</text>
+    </g>
+  </g>
+
+  <!-- Right: Local AI Generated Code Pane -->
+  <g transform="translate(518, 58)">
+    <rect width="268" height="428" rx="8" fill="#161B22" stroke="#21262D" />
+
+    <rect x="14" y="12" width="240" height="24" rx="4" fill="#0D1117" />
+    <text x="24" y="28" fill="#58A6FF" font-family="monospace" font-size="10">generated_app.py (Python)</text>
+
+    <!-- Syntax Highlighted Code Lines -->
+    <g transform="translate(14, 46)">
+      <rect width="240" height="368" rx="6" fill="#0D1117" stroke="#30363D" />
+
+      <text x="12" y="22" fill="#FF7B72" font-family="monospace" font-size="10">import</text>
+      <text x="56" y="22" fill="#79C0FF" font-family="monospace" font-size="10">tkinter</text>
+      <text x="108" y="22" fill="#FF7B72" font-family="monospace" font-size="10">as</text>
+      <text x="126" y="22" fill="#F0F6FC" font-family="monospace" font-size="10">tk</text>
+
+      <text x="12" y="40" fill="#FF7B72" font-family="monospace" font-size="10">from</text>
+      <text x="42" y="40" fill="#79C0FF" font-family="monospace" font-size="10">tkinter</text>
+      <text x="92" y="40" fill="#FF7B72" font-family="monospace" font-size="10">import</text>
+      <text x="136" y="40" fill="#FFA657" font-family="monospace" font-size="10">ttk</text>
+
+      <text x="12" y="66" fill="#8B949E" font-family="monospace" font-size="9"># Synthesized by Local AI</text>
+      <text x="12" y="80" fill="#FF7B72" font-family="monospace" font-size="10">class</text>
+      <text x="48" y="80" fill="#FFA657" font-family="monospace" font-size="10">App</text>
+      <text x="70" y="80" fill="#F0F6FC" font-family="monospace" font-size="10">(tk.Tk):</text>
+
+      <text x="24" y="98" fill="#FF7B72" font-family="monospace" font-size="10">def</text>
+      <text x="48" y="98" fill="#D2A8FF" font-family="monospace" font-size="10">__init__</text>
+      <text x="102" y="98" fill="#F0F6FC" font-family="monospace" font-size="10">(self):</text>
+
+      <text x="36" y="116" fill="#79C0FF" font-family="monospace" font-size="9">super</text>
+      <text x="66" y="116" fill="#F0F6FC" font-family="monospace" font-size="9">().__init__()</text>
+
+      <text x="36" y="134" fill="#F0F6FC" font-family="monospace" font-size="9">self.title("GUI")</text>
+      <text x="36" y="152" fill="#F0F6FC" font-family="monospace" font-size="9">self.geometry("400x300")</text>
+
+      <text x="36" y="176" fill="#8B949E" font-family="monospace" font-size="9"># Event Handler Wire</text>
+      <text x="36" y="192" fill="#F0F6FC" font-family="monospace" font-size="9">self.btn = ttk.Button(</text>
+      <text x="48" y="208" fill="#F0F6FC" font-family="monospace" font-size="9">self, text="Login",</text>
+      <text x="48" y="224" fill="#FFA657" font-family="monospace" font-size="9">command=self.login</text>
+      <text x="36" y="240" fill="#F0F6FC" font-family="monospace" font-size="9">)</text>
+      <text x="36" y="258" fill="#F0F6FC" font-family="monospace" font-size="9">self.btn.pack(pady=10)</text>
+
+      <text x="24" y="284" fill="#FF7B72" font-family="monospace" font-size="10">def</text>
+      <text x="48" y="284" fill="#D2A8FF" font-family="monospace" font-size="10">login</text>
+      <text x="78" y="284" fill="#F0F6FC" font-family="monospace" font-size="10">(self):</text>
+      <text x="36" y="300" fill="#7EE787" font-family="monospace" font-size="9"># Generated logic</text>
+      <text x="36" y="316" fill="#F0F6FC" font-family="monospace" font-size="9">print("Auth success")</text>
+
+      <!-- Bottom Status Pill inside code box -->
+      <rect x="12" y="332" width="216" height="24" rx="4" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" />
+      <text x="20" y="348" fill="#34D399" font-family="system-ui, sans-serif" font-size="9" font-weight="700">✓ Validated AST · Zero Deprecations</text>
+    </g>
+  </g>
+</svg>

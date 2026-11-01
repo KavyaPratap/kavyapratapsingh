@@ -1,0 +1,190 @@
+.about {
+  background: var(--bg-alt);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* ── Photo ── */
+.photoWrap {
+  position: relative;
+  width: 360px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--r-xl);
+  background: var(--surface);
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.photoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--r-xl);
+}
+
+/* Badge on photo */
+.photoBadge {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-md);
+  white-space: nowrap;
+}
+
+.photoAccent {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--accent-grad);
+  opacity: 0.12;
+  bottom: -30px;
+  right: -30px;
+  z-index: -1;
+}
+
+/* ── Content ── */
+.content {}
+
+.body {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Info grid */
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.infoCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.infoCard:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+
+.infoIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.infoLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.infoValue {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Interests */
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.interestsLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 4px;
+}
+
+.interest {
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 5px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.interest:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .photoWrap {
+    width: 280px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .photoInitials {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,87 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="8" fill="#0D1117" />
+  
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="500" fill="#161B22" />
+  <circle cx="36" cy="36" r="14" fill="#5B4EE8" />
+  <text x="58" y="41" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="700">PulseApp</text>
+  
+  <!-- Sidebar Menu Items -->
+  <rect x="18" y="80" width="144" height="36" rx="6" fill="#5B4EE8" fill-opacity="0.2" />
+  <rect x="28" y="94" width="8" height="8" rx="2" fill="#5B4EE8" />
+  <text x="46" y="103" fill="#A5B4FC" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Dashboard</text>
+  
+  <rect x="18" y="126" width="144" height="34" rx="6" fill="transparent" />
+  <circle cx="32" cy="143" r="4" fill="#6E7681" />
+  <text x="46" y="147" fill="#8B949E" font-family="system-ui, sans-serif" font-size="12">Analytics</text>
+  
+  <rect x="18" y="168" width="144" height="34" rx="6" fill="transparent" />
+  <circle cx="32" cy="185" r="4" fill="#6E7681" />
+  <text x="46" y="189" fill="#8B949E" font-family="system-ui, sans-serif" font-size="12">Team API</text>
+  
+  <rect x="18" y="210" width="144" height="34" rx="6" fill="transparent" />
+  <circle cx="32" cy="227" r="4" fill="#6E7681" />
+  <text x="46" y="231" fill="#8B949E" font-family="system-ui, sans-serif" font-size="12">Settings</text>
+  
+  <!-- Main Content Header -->
+  <text x="210" y="44" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Analytics Overview</text>
+  <rect x="670" y="24" width="105" height="30" rx="6" fill="#238636" />
+  <text x="686" y="44" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="600">● Live System</text>
+  
+  <!-- Metric Stat Cards -->
+  <g transform="translate(210, 70)">
+    <!-- Card 1 -->
+    <rect width="170" height="90" rx="8" fill="#161B22" stroke="#30363D" />
+    <text x="16" y="26" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Total Requests</text>
+    <text x="16" y="56" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">1.42M</text>
+    <text x="16" y="76" fill="#3FB950" font-family="system-ui, sans-serif" font-size="10" font-weight="600">↑ 18.4% vs last week</text>
+    
+    <!-- Card 2 -->
+    <g transform="translate(190, 0)">
+      <rect width="170" height="90" rx="8" fill="#161B22" stroke="#30363D" />
+      <text x="16" y="26" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Avg Latency</text>
+      <text x="16" y="56" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">38 ms</text>
+      <text x="16" y="76" fill="#3FB950" font-family="system-ui, sans-serif" font-size="10" font-weight="600">⚡ Real-time WebSocket</text>
+    </g>
+    
+    <!-- Card 3 -->
+    <g transform="translate(380, 0)">
+      <rect width="185" height="90" rx="8" fill="#161B22" stroke="#30363D" />
+      <text x="16" y="26" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Active Connections</text>
+      <text x="16" y="56" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="700">4,819</text>
+      <text x="16" y="76" fill="#58A6FF" font-family="system-ui, sans-serif" font-size="10" font-weight="600">● 99.9% uptime</text>
+    </g>
+  </g>
+  
+  <!-- Interactive Chart Area -->
+  <g transform="translate(210, 180)">
+    <rect width="565" height="180" rx="8" fill="#161B22" stroke="#30363D" />
+    <text x="20" y="30" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Real-Time Throughput (req/sec)</text>
+    
+    <!-- Grid Lines -->
+    <line x1="20" y1="60" x2="545" y2="60" stroke="#21262D" stroke-dasharray="4 4" />
+    <line x1="20" y1="100" x2="545" y2="100" stroke="#21262D" stroke-dasharray="4 4" />
+    <line x1="20" y1="140" x2="545" y2="140" stroke="#21262D" stroke-dasharray="4 4" />
+    
+    <!-- Area Gradient Chart -->
+    <defs>
+      <linearGradient id="chartGrad1" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#5B4EE8" stop-opacity="0.4" />
+        <stop offset="100%" stop-color="#5B4EE8" stop-opacity="0.0" />
+      </linearGradient>
+    </defs>
+    <path d="M 20 140 Q 90 120 160 85 T 300 95 T 430 50 T 545 70 L 545 155 L 20 155 Z" fill="url(#chartGrad1)" />
+    <path d="M 20 140 Q 90 120 160 85 T 300 95 T 430 50 T 545 70" stroke="#7C6BF8" stroke-width="3" fill="none" />
+    <circle cx="430" cy="50" r="5" fill="#FFFFFF" stroke="#7C6BF8" stroke-width="3" />
+  </g>
+  
+  <!-- Bottom Activity Bar -->
+  <g transform="translate(210, 380)">
+    <rect width="565" height="95" rx="8" fill="#161B22" stroke="#30363D" />
+    <text x="20" y="26" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11" font-weight="600">RECENT EVENTS</text>
+    <rect x="20" y="40" width="8" height="8" rx="4" fill="#3FB950" />
+    <text x="36" y="48" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="12">Auth service: 200 OK — User token verified in 12ms</text>
+    <rect x="20" y="65" width="8" height="8" rx="4" fill="#58A6FF" />
+    <text x="36" y="73" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="12">Database sync: MongoDB replica cluster healthy</text>
+  </g>
+</svg>
